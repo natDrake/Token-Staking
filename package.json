@@ -18,17 +18,17 @@
     "typechain": "^8.1.1"
   },
   "dependencies": {
-    "@openzeppelin/contracts": "^4.8.1"
+    "@openzeppelin/contracts": "^4.8.1",
+    "dotenv": "^16.0.3"
   },
   "scripts": {
     "node": "npx hardhat node",
-    "build": "npx hardhat clean && npx hardhat compile",
+    "build": "npx hardhat clean & npx hardhat compile",
     "test": "npx hardhat test",
     "coverage": "npx hardhat coverage",
-    "deploy:polygon": "npx hardhat run ./migrations/deploy.js --network polygon",
-    "deploy:bsc": "npx hardhat run ./migrations/deploy.js --network bsc",
-    "deploy:goerli": "npx hardhat run ./migrations/deploy.js --network goerli",
-    "deploy:avax": "npx hardhat run ./migrations/deploy.js --network avax",
-    "deploy:localhost": "npx hardhat run ./migrations/deploy.js --network localhost"
+    "deploy:polygon": "npx hardhat run ./scripts/deployment.js --network mumbai",
+    "deploy:bsc": "npx hardhat run ./scripts/deployment.js --network bsc",
+    "deploy:avax": "npx hardhat run ./scripts/deployment.js --network avax",
+    "deploy:localhost": "npx hardhat run ./scripts/deployment.js --network localhost"
   }
 }
